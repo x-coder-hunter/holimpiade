@@ -1,0 +1,87 @@
+<div class=" bg-gray-50">
+    <div class="h-60 bg-blue-500/75 border-b-15 border-b-orange-300 px-100">
+        <div class="p-10 px-0 flex flex-col gap-10">
+            <div class="flex items-center justify-between">
+                <div>
+                    <div class="flex text-nowrap text-5xl font-black text-gray-900/50 ">
+                        <div class="text-white">ho</div>
+                        <div class="text-6xl text-amber-300/75 underline">l</div>
+                        <div class="text-8xl text-green-500/75 ">i</div>
+                        <div class="text-white">mpiade .</div>
+                    </div>
+                    <!-- <div class="text-left  italic text-gray-900/40 ml-8">#let's coding</div> -->
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="text-white flex flex-col gap-2">
+                        <div class="text-2xl">Samedi</div>
+                        <div>15/03/204</div>
+                    </div>
+                    <div class="w-0.5 h-10 bg-gray-950/20"></div>
+                    <div>
+                        <i class="fas fa-cloud-sun text-6xl text-amber-300"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between gap-20">
+                <div class="flex items-center flex-1 w-full bg-amber-50 px-2  rounded-sm">
+                    <i class="fas fa-search text-2xl font-black text-blue-500/75"></i>
+                    <input type="text" placeholder="Rechercher ici.."
+                        class="flex flex-1 p-2 bg-amber-50 outline-0 border-0" [(ngModel)]="filter">
+                </div>
+                <div class="p-2 px-15 bg-gray-900/40 uppercase text-xl text-white outline-0 border-0  rounded-sm">
+                    Connexion</div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-200/30 p-1 border-b-1 border-b-gray-600/10">
+        <div class="px-100">
+            <div class="flex items-center justify-between">
+                <div [routerLink]="['/']"
+                    class="flex flex-1 items-center justify-center gap-2 cursor-pointer hover:opacity-75">
+                    <div class="text-4xl text-blue-500/75"><i class="fab fa-html5"></i></div>
+                    <div class="flex flex-col justify-center items-center font-extralight">
+                        <!-- <div class="uppercase">Html</div> -->
+                        <div class="uppercase">Accueil</div>
+                    </div>
+                </div>
+                <div class="h-10 w-0.5 bg-gray-950/5"></div>
+                <div [routerLink]="['/formations']"
+                    class="flex flex-1 items-center justify-center gap-2 cursor-pointer hover:opacity-75">
+                    <div class="text-4xl text-blue-500/75"><i class="fab fa-react"></i></div>
+                    <div class="flex flex-col justify-center items-center font-extralight">
+                        <!-- <div class="uppercase">React js</div> -->
+                        <div class="uppercase">Formations</div>
+                    </div>
+                </div>
+                <div class="h-10 w-0.5 bg-gray-950/5"></div>
+                <div [routerLink]="['/competitions']"
+                    class="flex flex-1 items-center justify-center gap-2 cursor-pointer hover:opacity-75">
+                    <div class="text-4xl text-blue-500/75"><i class="fab fa-node-js"></i></div>
+                    <div class="flex flex-col justify-center items-center font-extralight">
+                        <!-- <div class="uppercase">Node js</div> -->
+                        <div class="uppercase">Compétitions</div>
+                    </div>
+                </div>
+                <div class="h-10 w-0.5 bg-gray-950/5"></div>
+                <div [routerLink]="['/contacts']"
+                    class="flex flex-1 items-center justify-center gap-2 cursor-pointer hover:opacity-75">
+                    <div class="text-4xl text-blue-500/75"><i class="fab fa-wordpress"></i></div>
+                    <div class="flex flex-col justify-center items-center font-extralight">
+                        <!-- <div class="uppercase">Nos</div> -->
+                        <div class="uppercase">Contacts</div>
+                    </div>
+                </div>
+                <div class="h-10 w-0.5 bg-gray-950/5"></div>
+                <div [routerLink]="['/resume']"
+                    class="flex flex-1 items-center justify-center gap-2 cursor-pointer hover:opacity-75">
+                    <div class="text-4xl text-blue-500/75"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="flex flex-col justify-center items-center font-extralight">
+                        <!-- <div class="uppercase"></div> -->
+                        <div class="uppercase">Mes Formations</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
